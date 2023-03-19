@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building  my first git jenkin..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing git jen..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying. git jen...'
+            }
+        }
+    }
